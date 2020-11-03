@@ -1,0 +1,151 @@
+.signup__container {
+    margin: 50px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 480px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 7px rgba(0,0,0,.25);
+    font-family:  Montserrat, sans-serif;
+  }
+  .signup__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c70038cb;
+  }
+  .container__child {
+    width: 50%;
+    height: 100%;
+    color: #fff;
+  }
+  .signup__thumbnail {
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: url(http://ultraimg.com/images/spectre-login.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+  .thumbnail__logo,
+  .thumbnail__content,
+  .thumbnail__links {
+    position: relative;
+    z-index: 2;  
+  }
+  .thumbnail__logo {align-self: flex-start;}
+  .logo__shape {fill: #fff;}
+  .logo__text {
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 700;
+    vertical-align: bottom;
+  }
+  .thumbnail__content {align-self: center;}
+  h1,
+  h2 {
+    font-weight: 300;
+    color: rgba(255,255,255,1);
+  }
+  .heading--primary {font-size: 1.999rem;}
+  .heading--secondary {font-size: 1.414rem;}
+  .thumbnail__links {
+    align-self: flex-end;
+    width: 100%;
+  }
+  .thumbnail__links a {
+    font-size: 1rem;
+    color: #fff;
+  }
+  .signup__form {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem;
+    background: #fafafa;
+  }
+  label {
+    font-size: .85rem;
+    text-transform: uppercase;
+    color: #ccc;
+  }
+  .form-control {
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+  }
+  [type="text"] {color: #111;}
+  [type="password"] {color: #111;}
+  .btn--form {
+    padding: .5rem 2.5rem;
+    font-size: .95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family:  Montserrat, sans-serif;
+    color: #fff;
+    background: #C70039;
+    border: transparent;
+    border-radius: 35px;
+  }
+  .signup__link {
+    font-size: .8rem;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #999;
+  }
+  .form-group{
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+  }
+  .list-inline li{
+      margin-bottom: 15px;
+  }
+  .usercheckstats{
+    text-align: end;
+    font-size: 0.8em;
+    font-style: italic;
+    font-family:  Montserrat, sans-serif;
+
+  }
+  /* The snackbar - position it at the bottom and in the middle of the screen */
+#signup_snackbar{
+  font-family: Montserrat, sans-serif;
+  visibility: hidden; 
+  min-width: 250px; 
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center; 
+  border-radius: 10px; 
+  padding: 16px;
+  position: fixed; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; 
+  left: 50%;
+  bottom: 30px;
+}
+  #signup_snackbar.show{
+  visibility: visible; 
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+  @media only screen and (max-width: 600px){
+    .signup__container {
+        width: 90%;
+        flex-direction: column;
+    }
+    .signup__form {
+        justify-content: center;
+    }
+  }

@@ -1,0 +1,79 @@
+.button_holder{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.button_holder button{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-right: 20px;
+    width: 150px;
+    padding: 10px 15px;
+    font-family:Montserrat, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.button_holder button:hover{
+    cursor: pointer;
+}
+.active_but{
+    background-color: #31164C;
+    border: transparent;
+    color: white;
+}
+.inactive_but{
+    background-color: transparent;
+    color: gray;
+    border: 1.5px solid grey;
+}
+.calculator_img{
+    height: 300px;
+}
+.cal_text{
+    text-align: center;
+    font-family:Montserrat, sans-serif;
+    font-weight: bold;
+}
+
+.bmi_stats{
+    display: none;
+}
+
+.slidecontainer{
+    display: flex;
+    justify-content: center;
+}
+.slider{
+    -webkit-appearance: none;
+    width: 300px;
+    height: 10px;
+    margin: 15px 0;
+    border-radius: 5px;  
+    background: #3EDA9D;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #31164C;
+    cursor: pointer;
+  }
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .button_holder button{
+        width: auto;
+        margin-right: 5px;
+    }
+  }

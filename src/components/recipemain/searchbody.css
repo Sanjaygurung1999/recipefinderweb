@@ -1,0 +1,33 @@
+.input_bar{
+    font-family: Montserrat, sans-serif;
+    height: 50px;
+    width: 300px;
+    padding-left: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: #ffffff;
+    border-radius: 10px 0px 0px 10px;
+    height: 45px;
+}
+.input_bar::placeholder{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: 1; /* Firefox */
+}
+.select_option select{
+    font-family: Montserrat, sans-serif;
+    background-color: transparent;
+    border: 2px solid white;
+    padding-left: 10px;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    height: 51px;
+}
+.select_option select option{
+    background-color: #C70039;
+}
+
+@media only screen and (max-width: 600px) {
+    .input_bar{
+        width: auto;
+    }
+}
